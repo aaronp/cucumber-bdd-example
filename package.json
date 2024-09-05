@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+    "report:pdf": "node generate-pdf.js",
+    "test:pdf": "npm run test && npm run report:pdf"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cucumber/cucumber": "^11.0.0"
+    "@cucumber/cucumber": "^11.0.0",
+    "cucumber-html-reporter": "^7.1.1",
+    "puppeteer": "^23.3.0"
   }
 }
