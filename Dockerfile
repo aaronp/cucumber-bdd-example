@@ -18,4 +18,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Run the tests and generate the PDF
-CMD ["npm", "run", "test:pdf"]
+CMD ["npm", "run", "test"]
